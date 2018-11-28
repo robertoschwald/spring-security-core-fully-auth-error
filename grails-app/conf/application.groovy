@@ -7,15 +7,15 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.yourapp.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.yourapp.UserRole'
 grails.plugin.springsecurity.authority.className = 'com.yourapp.Role'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	[pattern: '/',               access: ['IS_AUTHENTICATED_REMEMBERED']],
+	[pattern: '/',               access: ['isAuthenticated()']],
 	[pattern: '/secure/**',      access: ['isFullyAuthenticated()']],
 	[pattern: '/role/**',        access: ['isFullyAuthenticated()']],
 	[pattern: '/user/**',        access: ['isFullyAuthenticated()']],
 	[pattern: '/health',         access: ['isFullyAuthenticated()']],
 	[pattern: '/health/**',      access: ['isFullyAuthenticated()']],
-	[pattern: '/error',          access: ['IS_AUTHENTICATED_REMEMBERED']],
-	[pattern: '/index',          access: ['IS_AUTHENTICATED_REMEMBERED']], // welcome page
-	[pattern: '/index.gsp',      access: ['IS_AUTHENTICATED_REMEMBERED']],
+	[pattern: '/error',          access: ['isAuthenticated()']],
+	[pattern: '/index',          access: ['isAuthenticated()']], // welcome page
+	[pattern: '/index.gsp',      access: ['isAuthenticated()']],
 	[pattern: '/shutdown',       access: ['permitAll']],
 	[pattern: '/assets/**',      access: ['permitAll']],
 	[pattern: '/**/js/**',       access: ['permitAll']],
