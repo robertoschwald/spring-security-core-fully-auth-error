@@ -10,7 +10,11 @@ Instead, a browser redirect loop error happens. No indication of an Authenticati
 ./grailsw run-app
 ```
 
-Login with: admin / password
+1. Login with: admin / password (tick the remember-me checkbox)
+2. Access http://localhost:8080/role/index after login (works).
+3. Now restart your browser, and access http://localhost:8080/role/index again. 
+
+A Re-Login should occur, but a redirect-loop happens.
 
 # application.groovy
 Holds springsecurity access rules containing 'isFullyAuthenticated()'. 
