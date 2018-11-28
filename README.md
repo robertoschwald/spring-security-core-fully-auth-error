@@ -19,7 +19,7 @@ A Re-Login should occur, but a redirect-loop happens.
 # application.groovy
 Holds springsecurity access rules containing 'isFullyAuthenticated()'. 
 
-# altenate rules tested
+# Alternate rules also tested
 Also tested with these rules (same effect):
 ```
 [pattern: '/role/**', access:["isFullyAuthenticated() and hasRole('ROLE_ADMIN')"]]
