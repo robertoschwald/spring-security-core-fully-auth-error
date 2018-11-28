@@ -5,6 +5,10 @@ On a remember-me login, an access to such a resource is expected to show the log
 
 Instead, a browser redirect loop error happens. No indication of an AuthenticationError is detected in the logs.
 
+# Running the application
+```./grailsw run-app```
+Login with: admin / password
+
 # application.groovy
 Holds springsecurity access rules containing 'isFullyAuthenticated()'. 
 
