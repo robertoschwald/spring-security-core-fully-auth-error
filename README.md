@@ -5,6 +5,8 @@ On a remember-me login, an access to such a resource is expected to show the log
 
 Instead, a browser redirect loop error happens. No indication of an AuthenticationException in the logs.
 
+Not sure if this is an issue, or a config problem.
+
 # Running the application
 ```
 ./grailsw run-app
