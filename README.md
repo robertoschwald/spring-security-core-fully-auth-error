@@ -1,7 +1,7 @@
 # spring-security-core-fully-auth-error
 Sample application showing Grails springsec-core 3.2.3 doesn't work with remember-me on fully secured resources.
 
-See [Grails Spring Sec Issue #566](https://github.com/grails-plugins/grails-spring-security-core/issues/566)
+See [Grails Spring Sec Core Issue #566](https://github.com/grails-plugins/grails-spring-security-core/issues/566)
 
 On a remember-me login, an access to such a resource is expected to show the login page with a relogin message.
 
