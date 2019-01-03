@@ -35,6 +35,8 @@ Also tested with these rules (same effect):
 
 Tested using persistent- and non-persistent tokens. 
 
+Tested with Annotation driven security rule as well. Same result.
+
 # Environment
 * Zulu OpenJDK 1.8
 * Grails 3.3.8
